@@ -2,7 +2,7 @@ import pandas as pd
 import re
 
 # 1. ЗАГРУЗКА ДАТАСЕТА
-df = pd.read_csv('/kaggle/input/datasets/ziya07/metadata-dataset-for-digital-libraries/metadata_dataset_targets.csv')
+df = pd.read_csv('/kaggle/input/datasets/asan104/newsss/synthetic_text_data.csv')
 
 print(f"Исходный размер: {df.shape}")
 
@@ -37,6 +37,6 @@ df = df.drop_duplicates(subset=[text_column])
 print(f"После удаления дубликатов: {df.shape}")
 
 # 6. СОХРАНЕНИЕ РЕЗУЛЬТАТА
-df.to_csv('/kaggle/working/cleaned_dataset.csv', index=False)
+df.to_csv('/kaggle/working/clean.csv', index=False)
 
 print("Готово! Файл сохранён в /kaggle/working/cleaned_dataset.csv")
