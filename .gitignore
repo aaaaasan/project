@@ -1,0 +1,27 @@
+# Виртуальное окружение
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Данные
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.parquet
+
+# Модели
+model/*.pkl
+model/*.pt
+model/*.joblib
+model/*.h5
+
+# DVC
+.dvc/tmp/
+.dvc/cache/
